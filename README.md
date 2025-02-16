@@ -99,3 +99,25 @@ docker-compose -f docker-compose-dev.yml down
 
 Siguiendo estos pasos, tendrás tu entorno de desarrollo correctamente configurado y listo para su uso.
 
+
+## Adicional - Uso de la Base de Datos
+
+Para acceder a la base de datos MySQL dentro del contenedor, ejecuta el siguiente comando:
+
+```bash
+docker exec -it films-backend-db mysql -u root -p
+```
+
+La contraseña de acceso es: **1234**
+
+Una vez dentro de MySQL, puedes ejecutar los siguientes comandos para ver las bases de datos y las tablas disponibles:
+
+```sql
+SHOW DATABASES;
+USE films;
+SHOW TABLES;
+```
+
+
+
+
